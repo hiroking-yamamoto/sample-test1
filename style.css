@@ -1,0 +1,259 @@
+body {
+    font-size: 16px;
+}
+
+/* ページ上部画像の項目 */
+.header {
+    text-align: center;
+}
+
+.logo {
+    margin:32px 0 20px;
+    width: 400px;
+    height: auto; 
+}
+
+.tree {
+    margin:0% 2.5%;
+    width: 97%;
+    border-radius: 10px;
+}
+
+/* メニューの項目 */
+ul.mainmenu {
+    list-style-type: none;
+    position: relative;
+    top: 30px;
+    height: auto;
+    margin: 0 0 50px;
+    font-size: 0px;
+    text-align: center;
+    flex-direction: column;
+}
+
+ul.mainmenu > a {
+    font-size: 0;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color:#888;
+    line-height: 2px;
+}
+
+.mainmenu > a > li {
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    margin: 0;
+    padding: 0px 30px;
+    border-width:0 0 4px 0;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+ul.mainmenu > a:hover {
+    color: #d2691e;
+}
+
+ul.mainmenu > a > li:hover {
+    border-bottom: 4px solid #d2691e;
+}
+
+/* 見出しの項目 */
+.index {
+    color: #eee;
+    font-weight: normal;
+    font-size: inherit;
+    margin: 25px 4% 0;
+    padding: 12px 20px;
+    background-color: #cf702c;
+    border-radius: 10px; 
+    text-decoration: none;
+}
+
+/* 更新履歴の項目 */
+.index ~ ul {
+    margin: 20px 40px;
+    padding-left: 7.5em;
+
+}
+
+.index ~ ul  > li{
+    color: #666;
+    padding-bottom: .5em;
+    text-indent: -7.5em;
+}
+
+.date {
+    font-weight: bold;
+    color: #444;
+}
+
+.date:after {
+    white-space: pre-wrap;
+    content:"   ";
+}
+
+/* 注意事項の項目 */
+.detail {
+    color: #666;
+}
+
+.detail > .backwhite {
+    color: #666;
+    font-weight: normal;
+    font-size: inherit;
+    margin: 25px 4% 0;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 10px; 
+    text-decoration: none;
+    border: solid 1px #666;
+}
+
+.detail >  p {
+    margin: 0 4%;
+    padding-left: 20px;
+    line-height: 2em;
+}
+
+.detail > p > a {
+    color: #666;
+    transition: 0.2s;
+}
+
+.detail > p > a:hover {
+    color: #cf702c;
+}
+
+.detail > .attention {
+    margin: 20px 4% 5px;
+    padding-left: 20px;
+    color: #cf702c;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+.detail > .attention:before {
+    white-space: pre-wrap;
+    content: "\025a0";
+}
+
+.detail > p > .bggray {
+    padding: 0 .5em;
+    display: inline-block;
+    border-radius:.5em;
+    background-color: #ddd;
+}
+
+.brockcolorbrown {
+    color: #cf702c;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* tableサンプルの指定 */
+.tablesample {
+    border-collapse: collapse;
+    margin: 4% 4% 0;
+    width: 92% ;
+}
+
+.tablesample th,.tablesample td {
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #666;
+    border: solid 1px gray;
+}
+
+.midashi {
+    text-align: center;
+    width:100px;
+}
+
+/* ギャラリー設定 */
+.picturetext {
+    margin: 25px 4%;
+    padding-left: 20px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+
+.picturetext > .picturepart {
+    display: inline-block;
+    width: 22%;
+    padding-bottom:25px;
+}
+
+.picturetext > .textpart {
+    display: inline-block;
+    color: #666;
+    line-height: 1.5em;
+    padding-left: 25px;
+    width: 70%;
+}
+
+/* リンクの設定 */
+
+.linktable {
+    margin: 25px 4%;
+    width: 92%;
+    color: #666;
+    border-collapse: collapse;
+}
+
+.linkmidashi {
+    background-color: #eee;
+    text-align: left;
+}
+
+.linktable th{
+    width: 30%;
+}
+
+.linktable  th , .linktable  td{
+    border: .5px solid #666;
+    border-collapse: collapse;
+    padding: 15px 10px;
+}
+
+.linktable a {
+    color: #666;
+    transition: 0.2s;
+}
+
+.linktable a:hover {
+    color: #cf702c;
+}
+
+#linkimg {
+    width: 100%;
+}
+
+/* フッターの指定 */
+.footer {
+    margin: 8% 0 0;
+    text-align: center;
+    line-height: 2em;
+    color: #666;
+    font-size: smaller;
+}
+
+/* フレキシブルデザイン */
+@media screen and (max-width:580px) {
+    body {
+        font-size: 80%;
+    }
+
+    ul.mainmenu > a:after {
+        content: "\000A";
+        white-space: pre-wrap;
+    }
+    
+}
